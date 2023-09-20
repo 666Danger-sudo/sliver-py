@@ -2209,6 +2209,10 @@ class Event(Message):
     def Client(self) -> Client: ...
     Data: bytes
     Err: str
+    @property
+    def Beacon(self) -> Beacon: ...
+    Data: bytes
+    Err: str
     """Can't trigger normal gRPC error"""
     def __init__(
         self,
